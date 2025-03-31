@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage('Build'){
             steps{
-                echo 'My third successful build!!'
+                echo 'My fourth build with a trigger!!'
             }
         }
 
