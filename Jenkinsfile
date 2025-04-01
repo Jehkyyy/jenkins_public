@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage('Build'){
             steps{
-                echo 'My fourth build with a trigger!!'
+                echo 'My first build with a trigger!!'
                 sh 'docker build -t simple-jenkins-app .'
             }
         }
