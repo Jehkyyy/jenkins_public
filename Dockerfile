@@ -8,8 +8,8 @@ WORKDIR /app
 COPY . /app
 
 #install any needed packages as specified in requirements.txt
-RUN pip install --no-cache-dir -r requirements.txt
-RUN pip install pytest
+RUN pip install --no-cache-dir -r requirements.txt && pip install pytest
+
 
 #make port 8000 in the container accessible to all
 EXPOSE 8000
